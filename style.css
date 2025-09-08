@@ -1,0 +1,87 @@
+/* style.css */
+body {
+    background-color: #f8f9fa;
+    padding-top: 70px; /* Tambahan padding untuk mengimbangi header yang fixed */
+    padding-bottom: 50px; /* TAMBAHAN PADDING UNTUK MENGIMBANGI FOOTER YANG FIXED */
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.bg-primary {
+    background-color: #0056b3 !important;
+}
+
+/* KODE UNTUK MEMBUAT DROPDOWN MENU TIDAK FULL-WIDTH */
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+        float: none;
+        width: 200px;
+        background-color: #004494;
+        border-radius: 0 0 0.25rem 0.25rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+        color: white !important;
+    }
+}
+
+.table thead th {
+    background-color: #007bff;
+    color: white;
+    vertical-align: middle;
+}
+
+.weekly-header td {
+    background-color: #e9ecef;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #ced4da;
+    border-bottom: 2px solid #ced4da;
+    vertical-align: middle;
+}
+
+.content-section {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+    margin-bottom: 2rem;
+}
+
+.schedule-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+}
+
+main.container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+tr.completed td {
+    text-decoration: line-through;
+    color: #999;
+}
+
+table td:first-child {
+    text-align: center;
+    vertical-align: middle;
+}
+
+table td:first-child input[type="checkbox"] {
+    transform: scale(1.2);
+}
